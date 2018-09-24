@@ -18,16 +18,16 @@ void __mergeBU( T arr[], int left, int mid, int right ) {
       arr[ k ] = aux[ j - left ];
       j++;
     } else if ( j > right ) {
-      arr [ k ] = aux [ i - left ];
+      arr[ k ] = aux[ i - left ];
       i++;
-    } else if ( arr[ i - left ] < arr[ j - 1 ] ) {
+    } else if ( aux[ i - left ] < aux[ j - left ] ) {
       arr[ k ] = aux[ i - left ];
       i++;
     } else {
-      arr[ k ] = aux[ j - 1 ];
+      arr[ k ] = aux[ j - left ];
       j++;
     }
-  } 
+  }
 }
 
 template <typename T>

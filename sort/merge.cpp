@@ -6,7 +6,7 @@ using namespace std;
 
 template<typename T>
 void __merge( T arr[], int left, int mid, int right ) {
-  T * aux = new T[ right - left + 1 ];
+  T aux[ right - left + 1 ];
 
   for ( int i = left; i <= right; i++ )
     aux[ i - left ] = arr[ i ];
@@ -14,7 +14,7 @@ void __merge( T arr[], int left, int mid, int right ) {
   int i = left;
   int j = mid + 1;
 
-  for ( int k = left ; k <= right; k++ ) {
+  for ( int k = left; k <= right; k++ ) {
     if ( i > mid ) {
       arr[ k ] = aux[ j - left ];
       j++;
@@ -29,8 +29,6 @@ void __merge( T arr[], int left, int mid, int right ) {
       j++;
     }
   }
-
-  delete [] aux;
 }
 
 // 递归使用归并排序，对 arr[l..r] 的范围进行排序
