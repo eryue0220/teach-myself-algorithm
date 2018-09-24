@@ -35,11 +35,10 @@ void __merge( T arr[], int left, int mid, int right ) {
 template<typename T>
 void __mergeSort( T arr[], int left, int right ) {
   // 当元素被递归到比较小时，可以采用插入排序来进行优化
-  if ( left >= right ) return;
-  // if ( right - left <= 15 ) {
-  //   insertionSort( arr, left, right );
-  //   return;
-  // }
+  if ( right - left <= 15 ) {
+    insertionSort( arr, left, right );
+    return;
+  }
 
   int mid = left + ( right - left ) / 2;
   __mergeSort( arr, left, mid );

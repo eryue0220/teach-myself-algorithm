@@ -19,4 +19,10 @@ void mergeSortBU( T [], int );
 template<typename T>
 void quickSort( T [], int );
 
+template<typename T>
+void quickSort2( T [], int );
+
+template<typename T>
+void quickSort3( T [], int );
+
 #endif // SORT_H
