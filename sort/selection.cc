@@ -1,7 +1,5 @@
 #include <algorithm>
-#include "student.h"
 #include "sort.h"
-#include "SortTestHelper.h"
 
 using namespace std;
 

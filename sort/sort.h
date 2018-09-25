@@ -25,4 +25,13 @@ void quickSort2( T [], int );
 template<typename T>
 void quickSort3( T [], int );
 
+template<typename T>
+void heapSort1( T[], int );
+
+template<typename T>
+void heapSort2( T[], int );
+
+template<typename T>
+void heapSort3( T[], int );
+
 #endif // SORT_H

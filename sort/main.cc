@@ -1,11 +1,5 @@
-#include "SortTestHelper.h"
-#include "insertion.cpp"
-#include "merge.cpp"
-#include "mergeBottomUp.cpp"
-#include "selection.cpp"
-#include "quick.cpp"
-#include "quick2.cpp"
-#include "quick3.cpp"
+#include "../tools/SortTestHelper.h"
+#include "sort.h"
 
 using namespace SortTestHelper;
 
