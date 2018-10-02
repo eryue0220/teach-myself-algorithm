@@ -1,8 +1,6 @@
 #include <algorithm>
 #include <cassert>
 
-using namespace std;
-
 template<typename Item>
 class MaxHeap {
   private:
