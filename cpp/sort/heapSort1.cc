@@ -1,5 +1,5 @@
 #include "sort.h"
-#include "heap.cpp"
+#include "../heap/heap.h"
 
 template<typename T>
 void heapSort1( T arr[], int n ) {
