@@ -1,5 +1,3 @@
-#include "search.h"
-
 template<typename T>
 int binarySearchRecurisiveCore( T arr[], int start, int end, int target ) {
   if ( start > end ) return -1;

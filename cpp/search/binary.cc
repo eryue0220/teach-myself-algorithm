@@ -1,5 +1,3 @@
-#include "search.h"
-
 /**
  * @description 若查找到 target 则返回 target 在 arr 数组中的位置，否则返回 -1;
  * @return int

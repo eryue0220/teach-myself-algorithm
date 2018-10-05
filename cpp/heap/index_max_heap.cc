@@ -39,16 +39,16 @@ private:
 
 public:
   IndexMaxHeap( int capacity ) {
-      data = new Item[ capacity + 1 ];
-      indexes = new int[ capacity + 1 ];
-      reverse = new int[ capacity + 1 ];
+    data = new Item[ capacity + 1 ];
+    indexes = new int[ capacity + 1 ];
+    reverse = new int[ capacity + 1 ];
 
-      for ( int i = 0; i <= capacity; i++ )
-        reverse[i] = 0;
+    for ( int i = 0; i <= capacity; i++ )
+      reverse[i] = 0;
 
-      this->capacity = capacity;
-      length = 0;
-    }
+    this->capacity = capacity;
+    length = 0;
+  }
 
   ~IndexMaxHeap() {
     delete [] data;
